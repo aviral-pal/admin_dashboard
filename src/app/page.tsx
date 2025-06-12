@@ -4,8 +4,15 @@ import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { useEffect, useState } from "react"
 
 export default function Home() {
+  const [year, setYear] = useState("")
+
+  useEffect(() => {
+    setYear(new Date().getFullYear().toString())
+  }, [])
+
   const router = useRouter()
 
   return (
@@ -39,7 +46,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="mt-16 text-sm text-muted-foreground text-center">
-        © {new Date().getFullYear()} Admin Dashboard Portal. All rights reserved.
+        © {year} Admin Dashboard Portal. All rights reserved.
       </footer>
     </main>
   )
