@@ -13,7 +13,7 @@ This project is a **frontend admin dashboard interface** built for a frontend in
 ### ✅ Part 1: Login Page
 - Clean and responsive layout using **shadcn/ui** + **Tailwind CSS**
 - Fields:
-  - Email (with validation)
+  - Email 
   - Password (with show/hide toggle)
 - Mock authentication (hardcoded credentials)
 - Redirects to `/dashboard` upon successful login
