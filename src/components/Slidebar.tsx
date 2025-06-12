@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ModeToggle } from './toggle-button'
 
 const navItems = [
   { name: "Dashboard", href: "/dashboard" },
@@ -18,6 +19,7 @@ export default function Sidebar() {
   return (
     <>
       {/* Mobile menu toggle */}
+      <ModeToggle/>
       <div className="md:hidden p-4 flex justify-between items-center border-b bg-background">
         <div className="text-2xl font-bold">Admin Panel</div>
         <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)}>
