@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { useEffect, useState } from "react"
-
+import { ModeToggle } from "@/components/toggle-button"
 export default function Home() {
   const [year, setYear] = useState("")
 
@@ -24,7 +24,7 @@ export default function Home() {
         <p className="text-muted-foreground text-lg">
           Manage your application with ease. Secure access for admins and users.
         </p>
-       
+       <ModeToggle/>
         <div className="flex gap-4 justify-center mt-6">
           <Button onClick={() => router.push("/login")}>Admin Login</Button>
           <Button variant="outline" onClick={() => router.push("/")}>User Access</Button>
