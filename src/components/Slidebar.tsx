@@ -9,7 +9,7 @@ import { ModeToggle } from './toggle-button'
 
 const navItems = [
   { name: "Dashboard", href: "/dashboard" },
-  { name: "Users", href: "#", disabled: true },
+  { name: "Users", href: "/dashboard/users" },
   { name: "Settings", href: "#", disabled: true },
 ]
 
